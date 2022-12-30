@@ -4,7 +4,7 @@ let weather = {
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
-        "&units=imperial&appid=" +
+        "&units=imperial&appid=" + // gets data from api
         this.apiKey
     )
       .then((response) => response.json())
@@ -17,7 +17,7 @@ let weather = {
     const { speed } = data.wind;
     console.log(name, description, temp, humidity, speed);
     document.querySelector(".city").innerText = "Weather in " + name;
-    document.querySelector(".description").innerText = description;
+    document.querySelector(".description").innerText = description; // pulls data from json and displays on card
     document.querySelector(".temp").innerText = temp + "°F";
     document.querySelector(".humidity").innerText =
       "Humidity: " + humidity + "%";
@@ -25,7 +25,7 @@ let weather = {
       "Wind speed: " + speed + " km/h";
   },
   search: function () {
-    this.fetchWeather(document.querySelector(".search-bar").value);
+    this.fetchWeather(document.querySelector(".search-bar").value); // adds functionality to search button
   },
 };
 
