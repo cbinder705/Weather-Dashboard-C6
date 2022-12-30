@@ -5,7 +5,11 @@ body {
   height: 100vh;
   margin: 0;
   background: rgb(3, 3, 3);
-  background-image: url("https://source.unsplash.com/1600x900/?city-night");
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgb(0, 255, 179)
+  );
 }
 .card {
   background: white;
