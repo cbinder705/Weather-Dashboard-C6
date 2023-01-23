@@ -41,4 +41,4 @@ document
     }
   });
 
-weather.fetchWeather("Philadelphia");
+weather.fetchWeather("Philadelphia"); // loads page with Philadelphia so it is not blank

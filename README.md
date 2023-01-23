@@ -20,4 +20,4 @@ THEN I am again presented with current and future conditions for that city
 
 # Deployed SS
 
-![WD-image] (images\weatherdbss.png)
+![WD-image](images\weatherdbss.png)
